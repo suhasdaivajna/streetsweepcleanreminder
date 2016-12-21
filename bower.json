@@ -1,0 +1,24 @@
+{
+  "name": "sample-app",
+  "description": "sample app",
+  "main": "",
+  "authors": [
+    "emil kirschner"
+  ],
+  "license": "Proprietary",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paper-elements": "1.0.7",
+    "vaadin-combo-box": "1.1.5",
+    "vaadin-grid": "1.1.2",
+    "vaadin-date-picker": "1.1.4"
+  }
+}
