@@ -21,14 +21,20 @@ import {PortalModule} from '@angular2-material/core/portal/portal-directives';
 import {OverlayModule} from '@angular2-material/core/overlay/overlay-directives';
 import {MdMenuModule} from '@angular2-material/menu/menu';
 import {RtlModule} from '@angular2-material/core/rtl/dir';
+import {Auth} from './auth.service'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers : [Auth]
 })
 export class AppComponent {
   private hello: string = 'Hello';
+
+  constructor(private auth: Auth){
+
+  }
   
   public sayHello(name: string) {
     return this.hello + ' ' + name;

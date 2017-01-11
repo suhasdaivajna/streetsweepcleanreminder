@@ -29,6 +29,8 @@ import {RtlModule} from '@angular2-material/core/rtl/dir';
 import { PolymerElement } from '@vaadin/angular2-polymer';
 
 import { AppComponent } from './app.component';
+import { AUTH_PROVIDERS }      from 'angular2-jwt';
+
 
 @NgModule({
   declarations: [
@@ -94,7 +96,7 @@ import { AppComponent } from './app.component';
     RtlModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  providers: [],
+  providers: [AUTH_PROVIDERS],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
